@@ -26,16 +26,31 @@
 .navbar-container {
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* border: 2px solid white; */
   /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(13, 9, 121, 1) 46%, rgb(2, 136, 226) 100%);
   color: white; */
 }
 
 .navbar-item {
-  padding: 25px;
+  padding: 30px;
   padding-left: 30px;
+  padding-right: 40px;
+  /* font-weight: bold; */
+  font-size: 18px;
   font-family: Helvetica, sans-serif;
+  flex: 1;
 }
 
+.portfolio {
+  font-family: cursive, Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  color: white;
+  cursor: default;
+}
 
 .remove-link:hover {
   border-bottom: 2px solid var(--yellow);
@@ -48,6 +63,12 @@
   text-decoration: none;
   color: white;
 }
+
+.right-side {
+  flex: 4;
+  text-align: end;
+}
+
 
 /* end of navbar css */
 .title {
@@ -75,11 +96,14 @@
   margin-bottom: 80px;
 }
 
+.skills-container {
+  margin-top: 120px;
+}
+
 .ski {
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-
 
 .webdev {
   text-align: center;
@@ -152,9 +176,11 @@
 
   .navbar-container {
     flex-direction: column;
+    position: relative;
   }
 
-  .navbar-item {
-    padding: 12px;
+  .right-side {
+    display: none;
   }
+
 }
