@@ -10,17 +10,32 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <!--local CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Ubuntu&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--Inserting Navbar-->
+
 
     <!--The into heading of the page -->
     <div class="mainpage">
+        <!--Inserting Navbar-->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-item"><a href="#" class="remove-link">Home</a></div>
+                <div class="navbar-item"><a href="#" class="remove-link">About Me</a></div>
+                <div class="navbar-item"><a href="#" class="remove-link">Skills</a></div>
+                <div class="navbar-item"><a href="#" class="remove-link">Contact Me</a></div>
+
+            </div>
+        </nav>
         <div class="title">
-            <h1 class="mainhead">Hello World</h1>
+            <h1 class="mainhead">Hey There! I'm Prasanna</h1>
             <h2><span class="automatic"></span></h2>
         </div>
     </div>
@@ -50,9 +65,9 @@
 
     <script>
         var typed = new Typed(".automatic", {
-            strings: ["Hello World"],
-            typeSpeed: 150,
-            backSpeed: 150,
+            strings: ["I'm into Web Development", "I'm into Machine Learning", "I'm into Competitive Programming"],
+            typeSpeed: 75,
+            backSpeed: 85,
             loop: true
         })
 

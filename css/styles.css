@@ -1,93 +1,160 @@
-body{
-    margin:0;
-}
-.mainpage{
-
-    background-color:#B8E8FC;
-    height:100vh;
-    text-align:center;
-}
-.title{    
-text-align:center;
-padding-top:20%;
-padding-bottom:20%;
-color:#6698FF;
-}
-.mainhead{
-  font-family:'Lora';
+:root {
+  --yellow: rgb(244, 252, 6)
 }
 
-.ski{
-    text-align: center;
-    font-family:'Lora'
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../images/background2.jpeg");
+  /* parallax effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  /* end of parallax */
+}
+
+.mainpage {
+  background-color: black;
+  height: 100vh;
+  text-align: center;
+}
+
+/* start of navbar css */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(13, 9, 121, 1) 46%, rgb(2, 136, 226) 100%);
+  color: white; */
+}
+
+.navbar-item {
+  padding: 25px;
+  padding-left: 30px;
+  font-family: Helvetica, sans-serif;
 }
 
 
-.webdev{
-    text-align:center;
-    padding-left:5%;
-    padding-right:5%;
-    
+.remove-link:hover {
+  border-bottom: 2px solid var(--yellow);
+  padding-bottom: 10px;
+  color: var(--yellow);
+  transition: all 0.2s ease-in-out;
 }
-.message{
-    text-align: center;
-    font-family:'Lora';
+
+.remove-link {
+  text-decoration: none;
+  color: white;
 }
-.contact{
-    text-align: center;
-    padding-bottom:2%;
+
+/* end of navbar css */
+.title {
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: #6698FF;
+
+}
+
+.automatic {
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  color: var(--yellow);
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.mainhead {
+  font-family: 'Lobster Two', cursive;
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-bottom: 80px;
+}
+
+.ski {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+.webdev {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+.message {
+  text-align: center;
+  font-family: 'Lora';
+}
+
+.contact {
+  text-align: center;
+  padding-bottom: 2%;
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    color:white;
-    background-color:#B8E8FC;
-    color: black;
-    
-
-    /* font-size: 30px; */
-    text-align: center;
-  }
-
-  .flex-item-left {
-    /* background-color: #f1f1f1; */
-    padding: 2%;
-    flex: 50%;
-    border: 20%;
-    border:solid;
-    border-color: black;
-    /* border-radius: 8%; */
-  }
-  
-  .flex-item-right {
-    /* background-color: #f1f1f1; */
-    padding: 2%;
-    flex: 50%;
-    border: 20%;
-    border:solid;
-    border-color: black;
-    /* border-radius: 8%; */
-  }
-
-  .flex-item-middle{
-    /* background-color: #f1f1f1; */
-    padding: 2%;
-    flex:50%;
-    border: 20%;
-    border:solid;
-    border-color: black;
-    /* border-radius: 8%; */
-  }
-  .msgicon:hover{
-    transform:scale(1.5);
-  }
-
-  /* Responsive layout - makes a one column-layout instead of two-column layout */
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
-  }
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #B8E8FC;
+  color: black;
 
 
+  /* font-size: 30px; */
+  text-align: center;
+}
+
+.flex-item-left {
+  /* background-color: #f1f1f1; */
+  padding: 2%;
+  flex: 50%;
+  border: 20%;
+  border: solid;
+  border-color: black;
+  /* border-radius: 8%; */
+}
+
+.flex-item-right {
+  /* background-color: #f1f1f1; */
+  padding: 2%;
+  flex: 50%;
+  border: 20%;
+  border: solid;
+  border-color: black;
+  /* border-radius: 8%; */
+}
+
+.flex-item-middle {
+  /* background-color: #f1f1f1; */
+  padding: 2%;
+  flex: 50%;
+  border: 20%;
+  border: solid;
+  border-color: black;
+  /* border-radius: 8%; */
+}
+
+.msgicon:hover {
+  transform: scale(1.5);
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+  }
+
+  .navbar-item {
+    padding: 12px;
+  }
+}
