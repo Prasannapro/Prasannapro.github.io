@@ -1,0 +1,93 @@
+body{
+    margin:0;
+}
+.mainpage{
+
+    background-color:#B8E8FC;
+    height:100vh;
+    text-align:center;
+}
+.title{    
+text-align:center;
+padding-top:20%;
+padding-bottom:20%;
+color:#6698FF;
+}
+.mainhead{
+  font-family:'Lora';
+}
+
+.ski{
+    text-align: center;
+    font-family:'Lora'
+}
+
+
+.webdev{
+    text-align:center;
+    padding-left:5%;
+    padding-right:5%;
+    
+}
+.message{
+    text-align: center;
+    font-family:'Lora';
+}
+.contact{
+    text-align: center;
+    padding-bottom:2%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    color:white;
+    background-color:#B8E8FC;
+    color: black;
+    
+
+    /* font-size: 30px; */
+    text-align: center;
+  }
+
+  .flex-item-left {
+    /* background-color: #f1f1f1; */
+    padding: 2%;
+    flex: 50%;
+    border: 20%;
+    border:solid;
+    border-color: black;
+    /* border-radius: 8%; */
+  }
+  
+  .flex-item-right {
+    /* background-color: #f1f1f1; */
+    padding: 2%;
+    flex: 50%;
+    border: 20%;
+    border:solid;
+    border-color: black;
+    /* border-radius: 8%; */
+  }
+
+  .flex-item-middle{
+    /* background-color: #f1f1f1; */
+    padding: 2%;
+    flex:50%;
+    border: 20%;
+    border:solid;
+    border-color: black;
+    /* border-radius: 8%; */
+  }
+  .msgicon:hover{
+    transform:scale(1.5);
+  }
+
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+
