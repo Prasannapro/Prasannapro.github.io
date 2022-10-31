@@ -356,3 +356,8 @@
     margin-top: 50px;
   }
 }
+
+/*Adding the border-radius for the image*/
+.about-img{
+  border-radius 30%;;
+}
