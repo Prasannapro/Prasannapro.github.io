@@ -1,93 +1,358 @@
-body{
-    margin:0;
-}
-.mainpage{
-
-    background-color:#B8E8FC;
-    height:100vh;
-    text-align:center;
-}
-.title{    
-text-align:center;
-padding-top:20%;
-padding-bottom:20%;
-color:#6698FF;
-}
-.mainhead{
-  font-family:'Lora';
+:root {
+  --yellow: rgb(244, 252, 6)
 }
 
-.ski{
-    text-align: center;
-    font-family:'Lora'
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../images/background2.jpeg");
+  /* parallax effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  /* end of parallax */
+}
+
+.mainpage {
+  background-color: black;
+  height: 100vh;
+  text-align: center;
+}
+
+/* start of navbar css */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* border: 2px solid white; */
+  /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(13, 9, 121, 1) 46%, rgb(2, 136, 226) 100%);
+  color: white; */
+}
+
+.navbar-item {
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  /* font-weight: bold; */
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  flex: 1;
+}
+
+.portfolio {
+  font-family: cursive, Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  color: white;
+  cursor: default;
+  font-weight: bolder;
+}
+
+.remove-link:hover {
+  border-bottom: 2px solid var(--yellow);
+  padding-bottom: 10px;
+  color: var(--yellow);
+  transition: all 0.2s ease-in-out;
+}
+
+.remove-link {
+  text-decoration: none;
+  color: white;
+}
+
+.right-side {
+  flex: 4;
+  text-align: end;
 }
 
 
-.webdev{
-    text-align:center;
-    padding-left:5%;
-    padding-right:5%;
-    
+/* end of navbar css */
+.title {
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: #6698FF;
+
 }
-.message{
-    text-align: center;
-    font-family:'Lora';
+
+.automatic {
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  color: var(--yellow);
+  font-weight: bolder;
+  font-size: 30px;
+  margin-top: 20px;
 }
-.contact{
-    text-align: center;
-    padding-bottom:2%;
+
+.mainhead {
+  font-family: 'Lobster Two', cursive;
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: -20px;
+  margin-bottom: 80px;
+}
+
+/* start of about me css */
+.about-container {
+  margin-top: 180px;
+  padding: 80px;
+  /* border: 1px solid white; */
+}
+
+.about-flex-content {
+  display: flex;
+  margin-top: 70px;
+
+  justify-content: center;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Lobster Two", Arial, Helvetica, sans-serif;
+}
+
+.about-content-title {
+  margin-bottom: 10px;
+  color: var(--yellow);
+}
+
+.about-content {
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 30px;
+  font-size: 20px;
+  min-width: 457px;
+  min-height: 400px;
+  max-width: 700px;
+  max-height: 700px;
+  overflow: auto;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  /* border: 2px solid white; */
+}
+
+/* end of about me css */
+/* start of skills css */
+.skills-container {
+  margin-top: 220px;
+  margin-bottom: 350px;
+}
+
+.ski {
+  text-align: center;
+  font-family: 'Lobster Two', Arial, Helvetica, sans-serif;
+}
+
+.skill-box-1:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.skills-title {
+  margin-bottom: 80px;
+}
+
+.skills-content-line {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.skills-content {
+  margin-top: 30px;
+}
+
+.skills-content-title {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: var(--yellow);
+}
+
+.webdev {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+
+.message {
+  text-align: center;
+  font-family: 'Lora';
 }
 
 .flex-container {
-    display: flex;
-    flex-direction: row;
-    color:white;
-    background-color:#B8E8FC;
-    color: black;
-    
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-color: #B8E8FC;
+  color: black;
 
-    /* font-size: 30px; */
+
+  /* font-size: 30px; */
+  text-align: center;
+}
+
+.flex-item-left {
+  /* background-color: #f1f1f1; */
+  padding: 2%;
+  margin-right: 30px;
+  margin-left: 30px;
+  flex: 50%;
+  box-shadow:
+    0 0 5px 5px #fff,
+    /* inner white */
+    0 0 10px 10px #f0f,
+    /* middle magenta */
+    0 0 15px 15px #0ff;
+  /* border-radius: 8%; */
+}
+
+.flex-item-right {
+  /* background-color: #f1f1f1; */
+  padding: 2%;
+  flex: 50%;
+  box-shadow:
+    0 0 5px 5px #fff,
+    /* inner white */
+    0 0 10px 10px #f0f,
+    /* middle magenta */
+    0 0 15px 15px #0ff;
+  /* outer cyan */
+  margin-right: 30px;
+  margin-left: 30px;
+
+
+  /* border-radius: 8%; */
+}
+
+.flex-item-middle {
+  /* background-color: #f1f1f1; */
+  padding: 2%;
+  flex: 50%;
+  margin-right: 30px;
+  margin-left: 30px;
+  box-shadow:
+    0 0 5px 5px #fff,
+    /* inner white */
+    0 0 10px 10px #f0f,
+    /* middle magenta */
+    0 0 15px 15px #0ff;
+  /* border-radius: 8%; */
+}
+
+/* end of skills css */
+/* start of contact css */
+.contact-container {
+  margin-top: 520px;
+  margin-bottom: 80px;
+  background: none;
+}
+
+.contact-title {
+  text-align: center;
+  font-family: "Lobster Two", Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.contact-flex-item {
+  margin: 50px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+  transition: all 0.2s ease-in-out
+}
+
+.fa-linkedin {
+  color: #02a1f7;
+}
+
+.fa-envelope {
+  color: rgb(245, 105, 105);
+}
+
+/* end of contact css */
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 890px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .about-content-title {
+    margin-top: 200px;
+  }
+
+  .skill-box-1:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .right-side {
+    display: none;
+  }
+
+  .about-container {
+    margin-top: 270px;
+  }
+
+  .about-flex-content {
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    position: relative;
   }
 
-  .flex-item-left {
-    /* background-color: #f1f1f1; */
-    padding: 2%;
-    flex: 50%;
-    border: 20%;
-    border:solid;
-    border-color: black;
-    /* border-radius: 8%; */
+  .about-content {
+    width: 400px;
+    min-width: 400px;
+    ;
+    justify-content: center;
+    height: 400px;
+    margin-left: 0px;
+    margin-top: 40px;
   }
-  
+
+  .flex-item-left,
+  .flex-item-middle,
   .flex-item-right {
-    /* background-color: #f1f1f1; */
-    padding: 2%;
-    flex: 50%;
-    border: 20%;
-    border:solid;
-    border-color: black;
-    /* border-radius: 8%; */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 1%;
   }
 
-  .flex-item-middle{
-    /* background-color: #f1f1f1; */
-    padding: 2%;
-    flex:50%;
-    border: 20%;
-    border:solid;
-    border-color: black;
-    /* border-radius: 8%; */
-  }
-  .msgicon:hover{
-    transform:scale(1.5);
+  .contact-flex {
+    flex-direction: column;
+    position: relative;
+    align-items: center;
   }
 
-  /* Responsive layout - makes a one column-layout instead of two-column layout */
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
+  .contact-flex-item {
+    margin-top: 50px;
   }
-
-
+}
