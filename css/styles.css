@@ -100,7 +100,7 @@
 
 /* start of about me css */
 .about-container {
-  margin-top: 120px;
+  margin-top: 180px;
   padding: 80px;
   /* border: 1px solid white; */
 }
@@ -144,7 +144,7 @@
 /* start of skills css */
 .skills-container {
   margin-top: 220px;
-  margin-bottom: 220px;
+  margin-bottom: 350px;
 }
 
 .ski {
@@ -189,11 +189,6 @@
 .message {
   text-align: center;
   font-family: 'Lora';
-}
-
-.contact {
-  text-align: center;
-  padding-bottom: 2%;
 }
 
 .flex-container {
@@ -256,10 +251,48 @@
   /* border-radius: 8%; */
 }
 
-.msgicon:hover {
-  transform: scale(1.5);
+/* end of skills css */
+/* start of contact css */
+.contact-container {
+  margin-top: 520px;
+  margin-bottom: 80px;
+  background: none;
 }
 
+.contact-title {
+  text-align: center;
+  font-family: "Lobster Two", Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-flex {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.contact-flex-item {
+  margin: 50px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.icon:hover {
+  transform: scale(1.5);
+  transition: all 0.2s ease-in-out
+}
+
+.fa-linkedin {
+  color: #02a1f7;
+}
+
+.fa-envelope {
+  color: rgb(245, 105, 105);
+}
+
+/* end of contact css */
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 890px) {
   .flex-container {
@@ -306,5 +339,15 @@
   .flex-item-right {
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+
+  .contact-flex {
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+
+  .contact-flex-item {
+    margin-top: 50px;
   }
 }
