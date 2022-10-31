@@ -35,9 +35,10 @@
 }
 
 .navbar-item {
-  padding: 30px;
   padding-left: 30px;
   padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 20px;
   /* font-weight: bold; */
   font-size: 18px;
   font-family: Helvetica, sans-serif;
@@ -140,13 +141,42 @@
 }
 
 /* end of about me css */
+/* start of skills css */
 .skills-container {
   margin-top: 220px;
+  margin-bottom: 220px;
 }
 
 .ski {
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-family: 'Lobster Two', Arial, Helvetica, sans-serif;
+}
+
+.skill-box-1:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.skills-title {
+  margin-bottom: 80px;
+}
+
+.skills-content-line {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.skills-content {
+  margin-top: 30px;
+}
+
+.skills-content-title {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: var(--yellow);
 }
 
 .webdev {
@@ -181,10 +211,15 @@
 .flex-item-left {
   /* background-color: #f1f1f1; */
   padding: 2%;
+  margin-right: 30px;
+  margin-left: 30px;
   flex: 50%;
-  border: 20%;
-  border: solid;
-  border-color: black;
+  box-shadow:
+    0 0 5px 5px #fff,
+    /* inner white */
+    0 0 10px 10px #f0f,
+    /* middle magenta */
+    0 0 15px 15px #0ff;
   /* border-radius: 8%; */
 }
 
@@ -192,9 +227,17 @@
   /* background-color: #f1f1f1; */
   padding: 2%;
   flex: 50%;
-  border: 20%;
-  border: solid;
-  border-color: black;
+  box-shadow:
+    0 0 5px 5px #fff,
+    /* inner white */
+    0 0 10px 10px #f0f,
+    /* middle magenta */
+    0 0 15px 15px #0ff;
+  /* outer cyan */
+  margin-right: 30px;
+  margin-left: 30px;
+
+
   /* border-radius: 8%; */
 }
 
@@ -202,9 +245,14 @@
   /* background-color: #f1f1f1; */
   padding: 2%;
   flex: 50%;
-  border: 20%;
-  border: solid;
-  border-color: black;
+  margin-right: 30px;
+  margin-left: 30px;
+  box-shadow:
+    0 0 5px 5px #fff,
+    /* inner white */
+    0 0 10px 10px #f0f,
+    /* middle magenta */
+    0 0 15px 15px #0ff;
   /* border-radius: 8%; */
 }
 
@@ -216,6 +264,11 @@
 @media (max-width: 890px) {
   .flex-container {
     flex-direction: column;
+  }
+
+  .skill-box-1:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
   }
 
   .navbar-container {
@@ -246,5 +299,12 @@
     height: 400px;
     margin-left: 0px;
     margin-top: 40px;
+  }
+
+  .flex-item-left,
+  .flex-item-middle,
+  .flex-item-right {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
