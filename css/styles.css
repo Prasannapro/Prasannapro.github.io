@@ -50,6 +50,7 @@
   text-decoration: none;
   color: white;
   cursor: default;
+  font-weight: bolder;
 }
 
 .remove-link:hover {
@@ -96,8 +97,51 @@
   margin-bottom: 80px;
 }
 
-.skills-container {
+/* start of about me css */
+.about-container {
   margin-top: 120px;
+  padding: 80px;
+  /* border: 1px solid white; */
+}
+
+.about-flex-content {
+  display: flex;
+  margin-top: 70px;
+
+  justify-content: center;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Lobster Two", Arial, Helvetica, sans-serif;
+}
+
+.about-content-title {
+  margin-bottom: 10px;
+  color: var(--yellow);
+}
+
+.about-content {
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 30px;
+  font-size: 20px;
+  min-width: 457px;
+  min-height: 400px;
+  max-width: 700px;
+  max-height: 700px;
+  overflow: auto;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  /* border: 2px solid white; */
+}
+
+/* end of about me css */
+.skills-container {
+  margin-top: 220px;
 }
 
 .ski {
@@ -169,7 +213,7 @@
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
-@media (max-width: 800px) {
+@media (max-width: 890px) {
   .flex-container {
     flex-direction: column;
   }
@@ -183,4 +227,24 @@
     display: none;
   }
 
+  .about-container {
+    margin-top: 270px;
+  }
+
+  .about-flex-content {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .about-content {
+    width: 400px;
+    min-width: 400px;
+    ;
+    justify-content: center;
+    height: 400px;
+    margin-left: 0px;
+    margin-top: 40px;
+  }
 }
