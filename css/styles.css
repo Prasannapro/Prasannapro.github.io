@@ -299,6 +299,10 @@
     flex-direction: column;
   }
 
+  .about-content-title {
+    margin-top: 200px;
+  }
+
   .skill-box-1:hover {
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
@@ -339,6 +343,7 @@
   .flex-item-right {
     margin-top: 30px;
     margin-bottom: 30px;
+    padding: 1%;
   }
 
   .contact-flex {
